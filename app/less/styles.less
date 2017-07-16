@@ -1,0 +1,568 @@
+* {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	box-sizing:border-box;
+	font-smoothing:antialiased;
+}
+*::-moz-focus-inner {
+	padding:0;
+	border:0
+}
+img {
+	vertical-align:top
+}
+address {
+	font-style:normal
+}
+ul,ol,li {
+	list-style:none
+}
+a {
+	text-decoration:none
+}
+input,textarea {
+	border-radius:0;
+	box-shadow:none
+}
+.clearfix {
+    &:before,&:after{
+	content:'';
+	display:table
+    }
+}
+.clearfix:after {
+	clear:both
+}
+section,footer,aside,main,nav {
+	display:block
+}
+html,body {
+	background:#fff;
+	color:#111;
+	font:16px/24px 'GothamPro',sans-serif;
+    min-width: 1340px;
+}
+h2{
+    font-size:30px;
+    font-family: "GothamPro",sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.button{
+    color: #111;
+    padding: 10px 25px;
+    border: 1px solid #111;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition:background-color .3s,box-shadow .1s;
+    &:hover{
+        color: #fff;
+        border: 1px solid #fff;
+        transition:background-color .3s,box-shadow .1s;
+        background: #fff;
+        color: #111;
+    }
+}
+.headlogo{
+    background-image: url(../img/headlogo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: auto;
+    height: 707px;
+    color: white;
+    position: relative;
+    &:before{
+        content: '';
+            background: #000;
+            opacity: .5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    }
+}
+.header{
+    width: 855px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 65px;
+}
+.header__link{
+    border-bottom:1px dashed #fff;
+    margin-right: 20px;
+     display: inline-block;
+     cursor: pointer;
+     color: #fff;
+}
+.headlogo__name{
+    width: 825px;
+   
+    margin: 50px auto 0;
+    position: relative;
+    
+}
+.headtitle{
+    font-family: 'Corinthia',sans-serif;
+    font-size: 140px;
+    
+    margin-left: 20px;
+}
+.headtext{
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 200px;
+    letter-spacing: 2px;
+    margin: 90px 0px 50px;
+    margin-left: 250px;
+    text-transform: uppercase;
+}
+.headlogo__participate{
+    position: relative;
+    margin: 20px auto 70px;
+    width: 220px;
+}
+.button--party{
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 15px 50px;
+    font-weight: bold;
+}
+.headlogo__info{
+    width:720px;
+    margin: 0 auto;
+    position: relative;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    text-transform: uppercase;
+    font-size: 32px;
+    height: 52px;
+    letter-spacing: .8px;
+}
+.info__item{
+    display: inline-block;
+    padding: 0px 20px;
+    height: 100%;
+    line-height: 52px;
+}
+.info__item--bordered{
+    padding: 0 50px;
+    border-left:2px solid white;
+    border-right:2px solid white;
+}
+.headlogo__links{
+    position: relative;
+    width: 740px;
+    margin: 60px auto;
+}
+.links__item{
+    display: inline-block;
+    margin:0 40px;
+}
+.about{
+    width: auto;
+    height: 700px;
+    position: relative;
+    padding: 20px 100px 0px;
+}
+.about__title{
+   margin: 50px auto 40px;
+    width: 180px;
+    
+}
+.about__wrapper{
+   max-width: 1200px;
+    padding: 0px 50px;
+    margin: 0 auto;
+}
+.about__text{
+    width:490px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 26px;
+    display: inline-block;
+    vertical-align: top;
+}
+.mrg{
+    margin-right: 40px;
+}
+.about__text--bottom{
+    text-align: left;
+    font-size: 18px;
+    line-height: 26px;
+     display: inline-block;
+    vertical-align: top;
+    width: auto;
+}
+.about__gallery{
+   min-width: 1050px
+}
+.gallery{
+    position: relative;
+    margin: 40px 0px;
+}
+.gallery__item{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.schedule{
+   width: auto;
+    position: relative;
+    padding: 20px 150px 0px;
+    
+}
+.schedule__title{
+     margin: 50px auto 40px;
+    width: 482px;
+}
+.schedule__wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 3px solid #111;
+    border-bottom: 3px solid #111;
+    padding: 60px 0;
+}
+.schedule__times{
+    float: left;
+    width: 580;
+    height: 250px;
+}
+.schedule__hosts{
+    float: right;
+    width: 320px;
+    height: 150px;
+    padding: 25px;
+    text-align: left;
+    font-size: 16px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+.times__theatre{
+    margin: 15px 0px;
+     font-size: 18px;
+    line-height: 26px;
+    margin-left: 60px;
+    position: relative;
+     &:before{
+        content: '16:30';
+        font-size: 18px;
+        line-height: 26px;
+        position: absolute;
+        left: -60px;
+         ont-weight: bold;
+    }
+}
+.times__jazz{
+    margin: 15px 0px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 60px;
+    position: relative;
+    &:before{
+        content: '18:30';
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        position: absolute;
+        left: -60px;
+    }
+}
+.donation{
+    width: auto;
+    position: relative;
+    padding: 20px 100px 0px;
+   margin-top: 50px;
+}
+.donation__title{
+     margin: 50px auto 40px;
+    width: 570px;
+}
+.donation__wrapper{
+    padding: 0px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.donation__leftpart{
+    width: 490px;
+    height: 420px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    li {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+.space{
+    margin-top: 10px;
+}
+.donation__rightpart{
+    width: 490px;
+    height: 420px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    li {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+.evening__title{
+     margin: 50px auto 40px;
+    width: 350px;
+}
+.evening__wrapper{
+    padding: 0px 50px;
+}
+.evening__box{
+    width: 925px;
+    
+    margin: 0 auto;
+    padding: 60px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+.collections{
+   width: 470px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    
+}
+.evening__design{
+    margin: 50px auto 0px;   
+    width: auto;
+}
+.design__item{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 0 35px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.evening__subtitle{
+    letter-spacing:.8px;
+    font-size: 18px;
+    position: relative;
+    text-transform: uppercase;
+    &:before{
+        content: url(../img/design.png);
+        position: absolute;
+        width: 33px;
+        left: 70px;
+        bottom: 40px;
+        height: 24px;
+    }
+}
+.evening__attractions{
+    text-transform: uppercase;
+    display: block;
+    margin: 60px auto 40px;
+    width: 250px;
+    letter-spacing: .8px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.evening__stars{
+    
+}
+.stars{
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+.stars__item{
+   
+}
+.stars__img{
+    width:320px;
+    height: 330px;
+}
+.stars__name{
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.stars__icon{
+    width: 21px;
+    height: 20px;
+    vertical-align: top;
+    margin: 0 auto;
+}
+.dinner{
+     width: auto;
+    position: relative;
+    padding: 20px 100px 0px;
+   margin-top: 50px;
+}
+.dinner__title{
+      margin: 50px auto 40px;
+    width: 100px;
+}
+.dinner__wrapper{
+    margin-left: 30px;
+    background-image: url(../img/dinner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 328px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.dinner__menu{
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+    padding: 40px;
+    background: white;
+    right: -20px;
+    top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.menu__title{
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+.tickets{
+    width: auto;
+    position: relative;
+    padding: 20px 100px 0px;
+    margin-top: 50px;
+}
+.tickets__title{
+    margin: 50px auto 40px;
+    width: 150px;
+}
+.tickets__comfort{
+    width: 560px;
+    margin: 0 auto 40px; 
+    font-size: 18px;
+    line-height: 26px;
+}
+.tickets__wrapper{
+   margin-left: 30px;
+    padding: 15px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tickets__item{
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    height: 535px;
+    width: 320px;
+    position: relative;
+    margin-right: 15px;
+    vertical-align: top;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.10);
+    background-color: white;
+}
+.tickets__subtitle{
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 52px;
+}
+.tickets__price{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.tickets__btn{
+    margin: 25px 0;
+}
+.button--ticket{
+    border: 2px solid black;
+    font-weight: bold;
+    &:hover{
+      color: #fff;
+        border-color: #fff;
+        background-image: url(../img/podloghka.png);
+        background-position: center center;
+    }
+}
+.tickets__programm {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+.tickets__bonus{
+   font-size: 14px;
+    line-height: 22px;  
+     margin-bottom: 35px;
+}
+.tickets__guests {
+     font-size: 14px;
+    line-height: 22px;  
+    font-weight: bold;
+}
+.tickets__item--wide{
+    width: 1000px;
+    height: 200px;
+    margin-top: 15px;
+}
+.tickets__programm--wide{
+    width: 650px;
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    bottom: 26px;
+}
+.tickets__podlog{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.tickets__helper{
+    display: inline-block;
+}
+.footer{
+     width: auto;
+    position: relative;
+    padding: 20px 100px 0px;
+   margin-top: 50px;
+}
+.footer__wrapper{
+    padding: 0 50px;
+}
+.footer__logo{
+    margin: 0 auto;
+    font-family: 'Corinthia',sans-serif;
+    font-size: 39px;
+    width:100px;
+    text-align: right;
+    margin-bottom: 30px;
+    line-height: 32px;
+}
+.footer__info{
+     margin: 15px auto;
+    font-size: 18px;
+    width: 500px;
+    line-height: 26px;
+}
+.footer__phone{
+     margin: 0 auto;
+    margin-bottom: 30px;
+    width: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 52px;
+    letter-spacing: .8px;
+}
